@@ -1,21 +1,30 @@
-*{
-  border: 2px solid red;
-}
 
 body{
   display: flex;
   flex-direction: column;
   font-family: 'Courier New', Courier, monospace;
+  margin: 0px;
 }
 
 .header-container{
   background-color : #1F2937;
 }
 
+.header{
+  margin-top: 0px;
+}
+
+.header-text{
+  display: flex;
+  margin-left: auto;
+}
+
 .top-container{
 display :flex;
 justify-content: center;
 background-color : #1F2937;
+padding-bottom: 50px;
+padding-top: 10px;
 }
 
 .top-text{
@@ -28,7 +37,7 @@ background-color : #1F2937;
 }
 
 .top-text{
-  width: 500px;
+  width: 350px;
   text-wrap: wrap;
   font-size: 18px;
 }
@@ -38,6 +47,7 @@ background-color : #1F2937;
   background-color: #3882F6;
   color: white;
   border-radius: 8px;
+  margin-top: 18px;
 }
 
 
@@ -46,27 +56,83 @@ background-color : #1F2937;
   color:#1F2937;
   font-size: 28px;
   margin: 12px;
+  padding: 12px 0px;
+}
+
+.middle{
+  background-color :#E5E7EB;
+  padding: 70px 0px;
 }
 
 .middle-text{
-  background-color :lightgray;
+  display:flex;
+  flex-wrap: wrap;
+  width:500px;
+  margin: auto;
+  font-size: 18px;
+}
 
+.middle-quote{
+  margin-left:auto;
+  margin-top: 16px;
 }
 
 .middle-photo{
+  flex-direction: row;
   display: flex;
-  align-items: center;
-  width: 150px;
-  height: 150px;
+  justify-content: center;
+  gap: 20px;
 }
 
-.bottom{
-  background-color :lightblue;
+.card{
+  margin: 18px 12px;
+}
+
+.bottom, .header{
+  display: flex;
+  justify-content: center;
+  margin: 18px 0px;
+}
+
+.bottom-title{
+    display:flex;
+    flex-wrap: wrap;
+    margin: auto;
+    flex-direction: column;
+    color:white;
+    width:400px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.bottom-text{
+  font-size:16px;
+  font-weight: 200;
+  margin-top: 8px;
+}
+
+.bottom-box{
+  display: flex;
+  background-color:#3882F6;
+  padding: 36px 84px;
+  margin:22px;
+  border-radius: 8px;
+}
+
+.bottom-button{
+  padding:2px 26px;
+  background-color: #3882F6;
+  color: white;
+  border-radius: 8px;
+  border: 1px solid white;
+  margin-left: 26px;
+
 }
 
 .footer{
-  background-color :darkgray;
+  background-color :#1F2937;
   text-align: center;
+  color: white;
 }
 
 ul{
@@ -74,23 +140,20 @@ ul{
   color: white;
 }
 
+li{
+  margin:0px 16px;
+  color: white;
+}
+
 a{
-  text-decoration-style: none;
-  
-}
-
-.header{
-  display:flex;
-}
-
-.header-text{
-  display: flex;
-  margin-left: auto;
+  text-decoration: none;
+  color: white
 }
 
 .image01{
   width: 400px;
   height:300px;
+  margin-left: 22px;
 }
 
 .image02{
@@ -98,7 +161,16 @@ a{
   height: 150px;
 }
 
+.image-text{
+  flex-wrap: row wrap;
+  width: 150px;
+}
+
 .logo{
   width: 50px;
   height:  50px;
+}
+
+span{
+  font-weight: bold;
 }
